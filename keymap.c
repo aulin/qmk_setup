@@ -55,9 +55,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * | Del  |Print |ScrLk |      |      |      |      |      | Home | PgUp |   Ö  |   Å  |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * | Shift|Pause |AuShTg|CapsLk|      |      |      |   -  |  End | PgDn |VolUp |Enter |
+ * | Shift|Pause |AuShTg|CapsLk|      |      |      |   -  |  End | PgDn | Vol+ |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Ctrl | GUI  |  <   | Alt  |Adjust|    Space    |Raise |AltGr | Next |VolDn | Play |
+ * | Ctrl | GUI  |  <   | Alt  |Adjust|    Space    |Raise |AltGr | Next | Vol- | Play |
  * `-----------------------------------------------------------------------------------'
  */
 [_RAISE] = LAYOUT_ortho_4x12(
@@ -69,20 +69,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Adjust
  * ,-----------------------------------------------------------------------------------.
- * |      |      |      |      |      |      |      |      |RGBMDn|RGBMUp|      |RGBTog|
+ * |      |      |      |      |      |      | Eff- | Eff+ | Mode-| Mode+|      |RGBTg |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Reset|      |      |      |      |      |      |      |BriDn |BriUp |      |Reset |
+ * | Reset|      |      |      |      |      |      |      | Bri- | Bri+ |      |Reset |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |EEPROM|      |      |      |      |      |      |      |HueDn |HueUp |      |EEPROM|
+ * |Ereset|      |      |      |      |      |      |      | Hue- | Hue+ |      |Ereset|
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      |      |      |      |    Space    |      |EffDn |EffUp |      |      |
+ * |      |      |      |      |      |    Space    |      | Sat- | Sat+ |      |      |
  * `-----------------------------------------------------------------------------------'
  */
 [_ADJUST] = LAYOUT_ortho_4x12(
-    KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO, RGB_RMOD, RGB_MOD, KC_NO, RGB_TOG,
-    QK_BOOT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO, RGB_VAD,  RGB_VAI, KC_NO, QK_BOOT,
-    EE_CLR,  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO, RGB_HUD,  RGB_HUI, KC_NO, EE_CLR,
-    KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_NO, RGB_SPD,  RGB_SPI, KC_NO, KC_NO
+    KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   RGB_SPD, RGB_SPI, RGB_RMOD, RGB_MOD, KC_NO, RGB_TOG,
+    QK_BOOT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   RGB_VAD,  RGB_VAI, KC_NO, QK_BOOT,
+    EE_CLR,  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   RGB_HUD,  RGB_HUI, KC_NO, EE_CLR,
+    KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_NO,   RGB_SAD,  RGB_SAI, KC_NO, KC_NO
 ),
 
 /* Numpad
