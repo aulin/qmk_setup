@@ -53,7 +53,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * |  ~   |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | Bksp |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Del  |Print |ScrLk |      |      |      |      |      | Home | PgUp |   Ö  |   Å  |
+ * | Del  |Print |ScrLk |      |      |      |      |      | Home | PgUp |   §  |   Å  |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | Shift|Pause |AuShTg|CapsLk|      |      |      |   -  |  End | PgDn | Vol+ |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_RAISE] = LAYOUT_ortho_4x12(
     RALT(KC_RBRC), KC_1,    KC_2,    KC_3,    KC_4,        KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_TRNS,
-    KC_DEL,        KC_PSCR, KC_SCRL, KC_NO,   KC_NO,       KC_NO,   KC_NO,   KC_NO,   KC_HOME, KC_PGUP, KC_TRNS, KC_LBRC,
+    KC_DEL,        KC_PSCR, KC_SCRL, KC_NO,   KC_NO,       KC_NO,   KC_NO,   KC_NO,   KC_HOME, KC_PGUP, KC_GRV,  KC_LBRC,
     KC_TRNS,       KC_PAUS, AS_TOGG, KC_CAPS, KC_NO,       KC_NO,   KC_NO,   KC_SLSH, KC_END,  KC_PGDN, KC_VOLU, KC_TRNS,
     KC_TRNS,       KC_TRNS, KC_TRNS, KC_TRNS, MO(_ADJUST), KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_MNXT, KC_VOLD, KC_MPLY
 ),
